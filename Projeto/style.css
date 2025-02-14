@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+header{
+    background-color: black;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+}
+header p , h1{
+    color: white;
+    text-align: center;
+}
+h1{
+    font-weight: bold;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.espaco , #imagem{
+    text-align: justify;
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+div#ajuste{
+   
+}
+section{
+    background-image: url(imagens/background001.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    color: white;
+}
+
+div#aula{   
+    width: 20%; 
+}
+
+#imagem{
+    box-shadow: 10px 10px 10px 10px black;
+}
+
