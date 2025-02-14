@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+:root {
+    --fonte1: Verdana,Geneva,Tahoma,sans-serif;
+    --fonte2: 'passion done', cursive;
+}
 header{
     background-color: black;
     width: 100%;
@@ -12,43 +16,74 @@ header p , h1{
 }
 h1{
     font-weight: bold;
+    font-variant: small-caps;
+}
+header > h1{
+    font-family: var(--fonte2);
+    font-size: 10vw;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    font-weight: bolder;
+    text-decoration: underline;
+    color: white;
 }
 body{
     margin: 0;
     padding: 0;
-    /*background-image: url(imagens/background001.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 13%;
-    background-position: 10% 21%;*/
     overflow-x: hidden;
 }
 
-.espaco , #imagem{
-    text-align: justify;
-    text-align: left;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 1.5em;
-}
+
 
 div#ajuste{
    
 }
 section{
-   
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte1);
+    font-size: 2em;
+}
+.normal{
+   background-color: white;
+   color: black;
+}
+.imagem{
+    background-color: rgba(49, 47, 47, 0.568);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.315);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.imagem > p {
+width: 400px;
+background-color: rgba(0, 0, 0, 0.295);
+display: inline-block;
+text-shadow: 1px 1px 0px black;
+
+}
+section > p {
+    padding-bottom: 2em;
 }
 
-div#aula{   
-    width: 20%; 
+section#ing01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+  
+}
+section#ing02{
+    background-image: url(imagens/background002.jpg);
+   
 }
 
-#imagem{
-    box-shadow: 10px 10px 10px 10px black;
-}
-img.video{
+/*img.video{
     position: absolute;
     top: 44.5%;
     left: 0;
@@ -57,6 +92,13 @@ img.video{
     max-width: none;
     z-index: -1;
     background-position: 50% 40%;
+}*/
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    color: white;
 }
 
 
