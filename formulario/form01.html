@@ -7,12 +7,12 @@
 </head>
 <body>
     <h1>meu primeiroo</h1>
-    <form action="cadastro.php">
-        <p> <label for="inome">
-   nome </label><input type="text" name="name" id="inome"></p>
-   <p> <label for="idate">
-     idade </label><input type="date" name="idade" id="idate"></p>
-    <p> <input type="button" value="enviar"></p>
+    <form action="cadastro.php" method="post">
+        <p> <label for="inome">nome </label>
+            <input type="text" name="nome" id="inome" required minlength="12"></p>
+   <p> <label for="idate">sobrenome </label>
+    <input type="text" name="sobrenome" id="idate"required minlength="8"></p>
+    <p> <input type="submit" value="enviar" required></p>
     </form>
 </body>
 </html>
