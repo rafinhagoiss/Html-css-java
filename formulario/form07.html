@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>exemplo de form</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest"> Estado</label>
+            <select name="Estado" id="iest">
+                <option value="BH">bahia</option>
+                <option value="Rj">Rio de Janeiro</option>
+                <option value="SP">Sao paulo</option>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profisao</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="dev">desenvolvedor</option>
+                <option value="Gp">garoto de programa</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg"> mensagem </label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+    </form>
+</body>
+</html>
