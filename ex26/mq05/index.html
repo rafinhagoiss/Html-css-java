@@ -8,27 +8,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaquery.css">
 </head>
-<body>
+<body onresize="mudoutamanho()">
     <header>
             <h1>meu Site</h1>
-            <span class="material-symbols-outlined" onclick="clickMenu()" id="hab">
+            <span class="material-symbols-outlined"id="hab" onclick="clickMenu()" >
                 menu
                 </span>
         <menu id="itens">
             <ul>
-                <a href="">
-                    <li> gostoso</li>
-                </a>
-                <a href="">
-                    <li>bonito</li>
-                </a>
-                <a href="">
-                    <li>lindo</li>
-                </a>
-                <a href="">
-                    <li>poderos</li>
-                </a>
-            </ul>
+                <li><a href="#">gostoso</a></li>
+                <li><a href="#">bonito</a></li>
+                <li><a href="#">lindo</a></li>
+                <li><a href="#">poderoso</a></li>
         </menu>
     </header>
     <main>
@@ -43,6 +34,13 @@
                 itens.style.display='none'
             } else {
                 itens.style.display ='block'
+            }
+        }
+        function mudoutamanho(){
+            if(window.innerWidth >= 768)
+                itens.style.display='block'
+            else{
+                intens.style.display='none'
             }
         }
     </script>

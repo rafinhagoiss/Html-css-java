@@ -5,7 +5,12 @@
     menu{
         display: block;
     }
- menu > ul > li {
+ menu#itens >ul > li {
     display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+main {
+    width: 768px;
 }
 }
